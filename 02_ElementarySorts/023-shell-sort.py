@@ -37,5 +37,5 @@ class shellSort():
 
         return self.lst
     
-sort = shellSort(lst, debug=False)
+sort = shellSort(lst, debug=True)
 print(sort.run_sort())
