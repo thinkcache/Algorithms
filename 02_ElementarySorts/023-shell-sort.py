@@ -12,12 +12,15 @@ class shellSort():
         print(f"Gap is initialized as {self.gap}")
 
     def run_sort(self):
+        
         while self.gap >0:
             if self.debug:
                 print(f"New gap ={self.gap}")
+            
             for i in range(self.gap,len(self.lst)):
                 j = i
                 mv_index = i
+                
                 while j>= self.gap:
                     j = j- self.gap
                 
@@ -26,6 +29,7 @@ class shellSort():
                         if self.debug:
                             print(f"sorted {mv_index},{j}, {self.lst}")
                         mv_index = j
+                    
                     else:
                         break
 
