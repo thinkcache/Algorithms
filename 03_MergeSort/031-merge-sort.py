@@ -1,5 +1,4 @@
 import random 
-lst = [9,3,1,5,4,8,10,2,6,7]
 
 def shuffle_seq(len=10):
     lst = [i for i in range(len)]
