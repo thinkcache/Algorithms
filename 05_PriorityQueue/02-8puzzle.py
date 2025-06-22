@@ -207,6 +207,10 @@ while True:
         break
 
     neighbourBoards = (pop[0].neighbors())
+
+    #critical optimization - remove the previous board 
+    neighbourBoards = [b for b in neighbourBoards if not b==pop[2] ]
+    
     moves = pop[1] +1
     for b in neighbourBoards: 
         pq.insert((b, moves, pop[0]))
